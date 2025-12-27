@@ -2,11 +2,10 @@
 
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+import { Pagination, Autoplay } from 'swiper/modules'
 
 // Import Swiper styles
 import 'swiper/css'
-import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 const HeroBanner = () => {
@@ -18,12 +17,12 @@ const HeroBanner = () => {
     },
     {
       id: 2,
-      src: '/images/banner.png',
+      src: '/images/banner-2.png',
       alt: 'Natural Organic Products Banner 2'
     },
     {
       id: 3,
-      src: '/images/banner.png',
+      src: '/images/banner-3.png',
       alt: 'Natural Organic Products Banner 3'
     },
     {
@@ -33,7 +32,7 @@ const HeroBanner = () => {
     },
     {
       id: 5,
-      src: '/images/banner.png',
+      src: '/images/banner-2.png',
       alt: 'Natural Organic Products Banner 5'
     }
   ]
@@ -41,10 +40,10 @@ const HeroBanner = () => {
   return (
     <section className="relative w-full">
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[Pagination, Autoplay]}
         spaceBetween={0}
         slidesPerView={1}
-        navigation={true}
+        navigation={false}
         pagination={{ 
           clickable: true,
           dynamicBullets: true 
@@ -83,21 +82,6 @@ const HeroBanner = () => {
 
       {/* Custom Swiper Styles */}
       <style jsx global>{`
-        .swiper-button-next,
-        .swiper-button-prev {
-          color: #9EE94C !important;
-          background: rgba(255, 255, 255, 0.9);
-          border-radius: 50%;
-          width: 44px !important;
-          height: 44px !important;
-          margin-top: -22px !important;
-        }
-        
-        .swiper-button-next:after,
-        .swiper-button-prev:after {
-          font-size: 18px !important;
-          font-weight: bold;
-        }
         
         .swiper-pagination-bullet {
           background: rgba(255, 255, 255, 0.5) !important;

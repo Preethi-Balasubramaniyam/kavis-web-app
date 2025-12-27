@@ -9,19 +9,19 @@ const CategoryBubbles = () => {
       id: 1,
       name: 'Personal Care',
       imagePath: '/images/personal-care.png',
-      description: 'Natural skincare and beauty products'
+      
     },
     {
       id: 2,
       name: 'Health Care',
       imagePath: '/images/health-care.png',
-      description: 'Wellness and health supplements'
+      
     },
     {
       id: 3,
       name: 'Home Care',
       imagePath: '/images/home-care.png',
-      description: 'Eco-friendly cleaning products'
+      
     }
   ]
 
@@ -52,12 +52,19 @@ const CategoryBubbles = () => {
 
                 {/* Category Title */}
                 <div className="space-y-2">
-                  <h3 className="text-xl font-semibold text-gray-800 group-hover:text-primary transition-colors">
+                  <h3
+                    className="text-gray-800 group-hover:text-primary transition-colors"
+                    style={{
+                      fontFamily: 'var(--font-sans)',
+                      fontWeight: 500,
+                      fontSize: '24px',
+                      lineHeight: '100%',
+                      letterSpacing: '0%'
+                    }}
+                  >
                     {category.name}
                   </h3>
-                  <p className="text-sm text-gray-600 max-w-48 mx-auto">
-                    {category.description}
-                  </p>
+                 
                 </div>
               </div>
             </div>

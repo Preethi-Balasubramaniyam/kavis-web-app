@@ -144,12 +144,24 @@ const BestSellers = () => {
                 </div>
 
                 {/* Product Name */}
-                <h3 className="font-semibold text-gray-800 mb-3 text-lg">
+                <h3
+                  className="text-gray-800 mb-3"
+                  style={{
+                    fontFamily: 'var(--font-sans)',
+                    fontWeight: 500,
+                    fontSize: '20px',
+                    lineHeight: '100%',
+                    letterSpacing: '0%'
+                  }}
+                >
                   {product.name}
                 </h3>
                 
                 {/* Product Description */}
-                <p className="text-sm text-gray-600 mb-3">
+                <p
+                  className="text-gray-600 mb-3"
+                  style={{ fontFamily: 'var(--font-sans)', fontWeight: 400, fontSize: '14px', lineHeight: '100%', letterSpacing: '0%' }}
+                >
                   {product.category === 'Hair Care' ? 'Frizz-Free, Strong & Health Hair' : 
                    product.category === 'Home Care' ? 'Hair Cleanser & hair strong and shiny' :
                    'reducing hair fall & breakage'}
