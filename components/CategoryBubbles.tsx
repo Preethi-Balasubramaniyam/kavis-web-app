@@ -28,7 +28,7 @@ const CategoryBubbles = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+        <div className="grid grid-cols-3 gap-6 justify-items-center">
           {categories.map((category) => (
             <div
               key={category.id}
@@ -37,7 +37,7 @@ const CategoryBubbles = () => {
               <div className="text-center space-y-4">
                 {/* Circular Image Container */}
                 <div className="relative">
-                  <div className="w-40 h-40 lg:w-48 lg:h-48 mx-auto rounded-full overflow-hidden shadow-card group-hover:shadow-xl transition-all duration-300 relative">
+                  <div className="w-28 h-28 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto rounded-full overflow-hidden shadow-card group-hover:shadow-xl transition-all duration-300 relative">
                     <Image
                       src={category.imagePath}
                       alt={category.name}

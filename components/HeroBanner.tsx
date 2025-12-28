@@ -53,7 +53,7 @@ const HeroBanner = () => {
           disableOnInteraction: false,
         }}
         loop={true}
-        className="w-full h-[320px] md:h-[320px] lg:h-[400px]"
+        className="w-full h-[150px] sm:h-[250px] md:h-[300px] lg:h-[400px]"
       >
         {bannerImages.map((banner) => (
           <SwiperSlide key={banner.id}>
@@ -62,7 +62,7 @@ const HeroBanner = () => {
               <img 
                 src={banner.src}
                 alt={banner.alt}
-                className="w-full h-full  object-cover"
+                className="w-full h-full object-cover object-center"
                 onError={(e) => {
                   // Fallback to placeholder if image fails to load
                   e.currentTarget.src = 'data:image/svg+xml;base64,' + btoa(`
